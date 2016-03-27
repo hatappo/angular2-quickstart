@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Angular 2 QuickStart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>                      <!-- (1) ES6が使えないブラウザでES6の機能を提供するライブラリ -->
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.umd.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-all.umd.js"></script>
+
+    <script src='app/app.component.js'></script>                                       <!-- (2) モジュールの読み込み -->
+    <script src='app/main.js'></script>
+
+  </head>
+
+  <body>
+    <my-app>Loading...</my-app>                                                        <!-- (3) コンポーネントが挿入される場所 -->
+  </body>
+
+</html>
